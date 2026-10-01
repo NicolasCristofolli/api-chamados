@@ -45,3 +45,4 @@ def contar_por_prioridade():
         else:
             contagem_prioridades[chamado["prioridade"]] = 1
     return contagem_prioridades
+print("alt" in "alta")
