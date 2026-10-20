@@ -2,7 +2,7 @@ from chamados import criar_chamado, fechar_chamado, listar_por_status, contar_po
 
 #VALIDOS
 try:
-    print(criar_chamado("valido", "alta"))
+    print(criar_chamado("teste apagar", "baixa"))
 except ValueError as erro:
     print(f"Erro: {erro}")
 try:
