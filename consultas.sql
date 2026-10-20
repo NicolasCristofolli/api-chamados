@@ -12,3 +12,12 @@ SELECT id, status FROM chamados WHERE status = 'fechado';
   
 -- Deletar as linhas onde o status esta em fechado
 DELETE FROM chamados WHERE status = 'fechado';
+
+--Mostra todos os chamados que nao tem responsável
+SELECT * FROM chamados WHERE responsavel IS NULL;
+
+--Mostra todos os chamados que nao tem responsável e estao abertos
+SELECT * FROM chamados WHERE responsavel IS NULL AND status = 'aberto';
+
+--Mostra a contagem das linhas q tem responsável válidos (se eu usar o COUNT(*), ele contaria todas as linhas, independente de nulo ou nao)
+SELECT COUNT(responsavel) FROM chamados;
